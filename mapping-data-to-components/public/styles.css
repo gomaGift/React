@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #bed9da;
+    line-height:1.6666;
+    height: 100%;
+    width: 100%;
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 1.2;
+    font-size: 500%;
+    font-weight: 700;
+    width: 1000px;
+    
+}
+
+h1 span {
+    display: inline-block;
+    background: hsl(165, 100%, 40%);
+    padding: 23px 40px;
+  
+ 
+   
+
+    
+    
+}
+
+.grid-container {
+    margin: 100px  25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 2em;
+    grid-auto-rows: minmax(300px ,auto);
+   
+    
+
+}
+.grid-item {
+    background: white;
+    margin: 0 auto;
+    max-width: 320px;
+
+}
+
+
+dd {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+dt {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.emoji{
+   
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+span {
+    text-align: center;
+}
+
+.label {
+    font-weight: 500;
+    text-wrap: wrap;
+    color:  hsl(165, 100%, 40%);
+    font-size: 1.7rem;
+    padding: 0 13.89px;
+    line-height: 1.2em;
+}
+
+.meaning {
+    margin-top: .1em;
+    font-size: small;
+    padding:  20px;
+    color: #4c4f4f;
+}
