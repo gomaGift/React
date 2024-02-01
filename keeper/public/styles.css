@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #dadada;
+  color: #eee;
+  min-height: 100%;
+}
+
+header {
+  background-color: #f5ba13;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header h1 {
+  color: white;
+  font-family: cursive;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  text-align: center;
+  background: gray;
+}
+
+footer p {
+  color: white;
+  height: 2em;
+  padding-top: 0.5em;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin: 16px;
+  width: 240px;
+  float: left;
+  position: relative;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: black;
+}
+
+.note-input {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  margin-top: 5em;
+  width: 400px;
+  position: relative;
+  margin: 2em auto;
+  border-radius: 7px;
+  padding: 1em;
+  box-shadow: 0 0 0.3em 0 gray;
+}
+
+.add {
+  position: absolute;
+  top: 6.5em;
+  right: 0.9em;
+  border-radius: 50%;
+  padding: 0.5em;
+  border: none;
+  background: #f5ba13;
+  cursor: pointer;
+}
+
+.add span {
+  font-size: smaller;
+  border: none;
+  color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.content {
+  margin-top: 0.3em;
+}
+
+.delete-btn {
+  margin-left: 12.5em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-btn span {
+  background: white;
+  color: #f5ba13;
+
+}
+
+textarea {
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  resize: none;
+  height: auto;
+  min-height: 0;
+}
