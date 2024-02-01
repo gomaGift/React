@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 1.5em;
+    background: rgb(243, 209, 137);
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: cursive;
+    padding: 0 .8em;
+    transform:  perspective(100px) rotateX(-5deg) skewY(3deg); /* Skew the text horizontally */
+  border-radius: 0 10px 15px 10px; /* Rounded corners */
+  display: inline-block
+   
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    background: white;
+    width: 280px;
+    height: 500px;
+    gap: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px;
+  
+  
+}
+
+.dots {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(black 10%, transparent 0%);
+    background-size: 20px 20px; /* Adjust the size of the dots */
+    opacity: 0.2; /* Adjust the opacity of the dots */
+    pointer-events: none;
+  }
+
+
+body {
+    background: rgb(243, 209, 137);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 2px dashed yellow;
+    margin-right: .4em;
+  
+
+}
+
+button {
+    width: 2em;
+    font-size: .5em ;
+    width: 35px;
+    padding: 5px 0;
+    box-shadow: 0 2px 0 yellow;
+    
+}
+
+.form {
+    position: relative;
+}
+
+button {
+    position: absolute;
+    bottom: 2px;
+}
+
+li {
+    word-wrap: break-word;
+}
